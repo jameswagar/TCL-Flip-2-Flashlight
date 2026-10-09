@@ -7,7 +7,7 @@ BT="$SDK/build-tools/35.0.0"
 ANDROID_JAR="$SDK/platforms/android-34/android.jar"
 JAVA_HOME="${JAVA_HOME:-$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home}"
 export JAVA_HOME PATH="$JAVA_HOME/bin:$PATH" LC_ALL=C
-ARTIFACT_NAME="Flashlight-v0.3.2-no-white-preview-dev.apk"
+ARTIFACT_NAME="Flashlight-v0.3.2.apk"
 FINAL_APK="$BUILD/$ARTIFACT_NAME"
 TEMP_APK="$BUILD/.$ARTIFACT_NAME.tmp"
 mkdir -p "$BUILD"

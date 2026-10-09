@@ -25,4 +25,4 @@ bash contract-test.sh
 bash build.sh
 ```
 
-Output: `build/Flashlight-v0.3.2-no-white-preview-dev.apk`
+Output: `build/Flashlight-v0.3.2.apk`

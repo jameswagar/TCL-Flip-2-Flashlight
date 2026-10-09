@@ -10,7 +10,7 @@ ICON="$ROOT/res/drawable/ic_flashlight.xml"
 [[ -f "$MANIFEST" && -f "$ACTIVITY" && -f "$POLICY" && -f "$BUILD" && -f "$STYLES" && -f "$ICON" ]]
 grep -Fq 'package="com.dumbphone.flashlight"' "$MANIFEST"
 grep -Fq 'android:versionCode="15"' "$MANIFEST"
-grep -Fq 'android:versionName="0.3.2-no-white-preview-dev"' "$MANIFEST"
+grep -Fq 'android:versionName="0.3.2"' "$MANIFEST"
 grep -Fq 'android:name=".FlashlightActivity"' "$MANIFEST"
 grep -Fq 'android:exported="false"' "$MANIFEST"
 grep -Fq 'android:name=".FlashlightAlias"' "$MANIFEST"
@@ -62,5 +62,5 @@ if grep -Eq 'FLAG_SHOW_WHEN_LOCKED|setShowWhenLocked|requestDismissKeyguard|FLAG
   echo 'flashlight must not bypass keyguard or wake the screen' >&2
   exit 1
 fi
-grep -Fq 'Flashlight-v0.3.2-no-white-preview-dev.apk' "$BUILD"
+grep -Fq 'Flashlight-v0.3.2.apk' "$BUILD"
 echo 'screen-flashlight contract PASS'
