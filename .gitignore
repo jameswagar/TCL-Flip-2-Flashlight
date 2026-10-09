@@ -1,0 +1,5 @@
+build/
+.signing-password
+screen-flashlight.jks
+*.idsig
+.DS_Store
